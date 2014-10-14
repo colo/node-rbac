@@ -3,16 +3,28 @@
   "version": "0.0.1",
   "description": "Role Based Access Control",
   "url": "http://github.com/colo/node-rbac",
-  "author": { "name": "Luciano Bueno", "email": "glamero@gmail.com" },
-  "engines": { "node": ">= 0.4.8" },
+  "author": {
+    "name": "Luciano Bueno",
+    "email": "glamero@gmail.com"
+  },
+  "engines": {
+    "node": ">= 0.4.8"
+  },
   "dependencies": {
-	"mootools": "1.4"
+    "mootools": "~1.5.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
-  "keywords": ["rbac", "roles", "auth", "authorization"]
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "keywords": [
+    "rbac",
+    "roles",
+    "auth",
+    "authorization"
+  ]
 }
