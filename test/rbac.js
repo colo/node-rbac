@@ -12,24 +12,24 @@ var rbac = new Rbac.Rbac(
   )
 );
 
-console.log('getPermissions');
-console.log(util.inspect(rbac.getPermissions(), false, 1));
-console.log('getConstrains');
-console.log(util.inspect(rbac.getConstrains(), false, 1));
-console.log('getConstrains.rc.getRoles');
-console.log(util.inspect(rbac.getConstrains()['rc'].getRoles(), false, 1));
-console.log('getRoles');
-console.log(util.inspect(rbac.getRoles(), false, 2));
-console.log('getRoles.admin.getRoles');
-console.log(util.inspect(rbac.getRoles()['admin'].getRoles(), false, 0));
-console.log('getRoles.user.getSubjects');
-console.log(util.inspect(rbac.getRoles()['user'].getSubjects(), false, 0));
+//console.log('getPermissions');
+//console.log(util.inspect(rbac.getPermissions(), false, 1));
+//console.log('getConstrains');
+//console.log(util.inspect(rbac.getConstrains(), false, 1));
+//console.log('getConstrains.rc.getRoles');
+//console.log(util.inspect(rbac.getConstrains()['rc'].getRoles(), false, 1));
+//console.log('getRoles');
+//console.log(util.inspect(rbac.getRoles(), false, 2));
+//console.log('getRoles.admin.getRoles');
+//console.log(util.inspect(rbac.getRoles()['admin'].getRoles(), false, 0));
+//console.log('getRoles.user.getSubjects');
+//console.log(util.inspect(rbac.getRoles()['user'].getSubjects(), false, 0));
 
-console.log('Session');
+//console.log('Session');
 var session = new Rbac.Session('Admin');
 session.setRole(rbac.getRoles()['admin']);
 session.setSubject(rbac.getRoles()['admin'].getSubjects()['colo']);
 rbac.setSession(session);
 
-console.log(rbac.check(new Rbac.Operation('read'), new Rbac.Resource('file')));
-// console.log(util.inspect(rbac.getRoles()['user'].getSubjects(), false, 0));
+//console.log(rbac.check(new Rbac.Operation('read'), new Rbac.Resource('file')));
+// //console.log(util.inspect(rbac.getRoles()['user'].getSubjects(), false, 0));
