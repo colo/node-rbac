@@ -1,5 +1,5 @@
 {
-  "name": "rbac",
+  "name": "node-rbac",
   "version": "0.0.1",
   "description": "Role Based Access Control",
   "url": "http://github.com/colo/node-rbac",
